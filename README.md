@@ -94,11 +94,11 @@ This is a simple MATLAB example demonstrating how to generate some of the figure
 
 ### 📁 Files
 
-- `plot_across_backgrounds.m`: A script that generates the scaled quality per scene.
-Colors represent the identical distortion type with the line types indicating the strength of the distortion levels.
+- `analysis/plot_across_backgrounds.m`: A script that generates the scaled quality per scene.
+Colors represent the distortion type, while line styles indicate the strength of the distortion levels.
 
-- `plot_scatter_backgrounds.m`: A script that generates the scatter plot per optical blending method.
-Colors represent the background luminance levels, and the markers represent the background type.
+- `analysis/plot_scatter_backgrounds.m`: A script that generates a scatter plot for each optical blending method.
+Colors represent background luminance levels, and markers indicate the background type.
 
 ### 🚀 How to Run
 
@@ -106,7 +106,7 @@ Colors represent the background luminance levels, and the markers represent the 
 2. Navigate to the folder using the command window or `cd`:
 
     ```matlab
-    cd path/to/this/folder
+    cd path/to/this/folder/analysis
     ```
 
 3. Run the script:
