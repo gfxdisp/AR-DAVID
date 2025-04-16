@@ -389,6 +389,6 @@ class ARDAVID(VideoDataset):
             ds_name = f"AR-DAVID-{self.mf_method}"
         else:
             ds_name = f"AR-DAVID-{self.mf_method}_discount_{self.discount_factor:.2f}".replace('.', '_')
-        
+
         return ds_name
         # return f"AR-DAVID"
