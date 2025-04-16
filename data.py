@@ -386,7 +386,9 @@ class ARDAVID(VideoDataset):
 
     def get_ds_name(self):
         if math.isclose(self.discount_factor, 1.0, rel_tol=1e-3):
-            return f"AR-DAVID_{self.mf_method}"
+            ds_name = f"AR-DAVID-{self.mf_method}"
         else:
-            return f"AR-DAVID_{self.mf_method}_discount_{self.discount_factor:.2f}"
+            ds_name = f"AR-DAVID-{self.mf_method}_discount_{self.discount_factor:.2f}".replace('.', '_')
+        
+        return ds_name
         # return f"AR-DAVID"
